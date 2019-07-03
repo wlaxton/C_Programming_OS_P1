@@ -1,0 +1,20 @@
+//Program
+The program's main function is to read numbers from an input file and then print them out backwards with pid of the process that read those numbers.
+Git was used to maintain versions.
+./P1 is used to run the program
+input.dat and output.dat are the default files the program will use.
+input.dat is formated a particular way. The First number tells the program how many loops needed to cover the whole file.
+The next number tells the program how many numbers to read and the list of numbers are the numbers that are to be printed backwards. This format is repeated as many times as the first number in the file specifies.
+
+//main.c
+main.c reads from and outputs to a default input and output file.
+Running the program with the -h option will give list the various options available that can change the input and output files.
+The same option can not be used twice. The program will give an error.
+main.c will fork processes. Each of which will read a line from the input and then print the numbers backwards to the output file as well as the PID of the process that read those numbers.
+
+//stack.c
+stack.c uses stack.h for function definitions
+stack.c preforms normal stack operations like push and pop in addition to functions that will check if the stack is empty of full
+
+//makefile
+Running  make will automatically remove any object files in the directory.
